@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ola', function () {
-    echo 'Olá, Mundo!';
-});
+Route::get('/series', [SeriesController::class, 'listarSeries']);
